@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NmaEvalutationTool"
+             x:Class="NmaEvalutationTool.MainPage">
+    <ScrollView>
+    <StackLayout VerticalOptions="StartAndExpand">
+        <Label FontSize="Large" Text="Username" />
+        <Entry x:Name="usernameEntry" Placeholder="example@student.howest.be" />
+        <Label FontSize="Large" Text="Group to evaluate" />
+        <Entry x:Name="group" Placeholder="name of the group" />
+        <Label FontSize="Large" Text="User Experience and GUI Design"/>
+        <Picker x:Name="QuestionGUI" />
+        <Label FontSize="Large" Text="Implementation: code quality and level"/>
+        <Picker x:Name="QuestionCode"/>
+        <Label FontSize="Large" Text="Research: use of (new) tech, code concepts, challenges"/>
+        <Picker x:Name="QuestionResearch"/>
+        <Label FontSize="Large" Text="Presentation skills"/>
+        <Picker x:Name="QuestionPresentation"/>
+        <Label FontSize="Large" Text="Overall"/>
+        <Picker x:Name="QuestionOverall"/>
+        <Label FontSize="Large" Text="Any remarks ?" />
+        <Editor x:Name="Remarks" HeightRequest="100"/>
+        <Button x:Name="btnFinish" Text="Finish"/>
+    </StackLayout>
+    </ScrollView>
+
+</ContentPage>
